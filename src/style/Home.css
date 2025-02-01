@@ -1,0 +1,35 @@
+.hero-section {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    padding: 80px 0;
+}
+
+.features-section .feature-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.features-section .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works .step-card {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+}
+
+.step-number {
+    color: #007bff;
+    font-size: 2rem;
+}
+
+.get-started {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    padding: 80px 0;
+}
+
+body.dark-mode .card {
+    background-color: #2a2a2a; /* Slightly lighter than main background */
+    color: #ffffff;
+    border: 1px solid #444444; /* Subtle border for definition */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}

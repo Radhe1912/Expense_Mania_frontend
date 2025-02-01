@@ -1,0 +1,32 @@
+.navbar{
+    padding: var(--spacing-medium);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-background);
+    box-shadow: 0 2px 4px var(--box-shadow);
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #1a1a1a !important;
+}
+
+body.dark-mode .expense-tracker {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode .feature-card, body.dark-mode .step-card {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .cta-btn {
+    background-color: #444444;
+    color: #ffffff;
+}
