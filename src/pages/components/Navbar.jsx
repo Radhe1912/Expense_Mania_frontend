@@ -31,7 +31,7 @@ const Navbar = () => {
 
     const handleLogout = async () => {
         try {
-            const response = await fetch(`${backendUrl}/api/route/logout`, {
+            const response = await fetch(`https://expense-mania-backend.onrender.com/api/route/logout`, {
                 method: "GET",
                 credentials: "include", // Ensure cookies are sent with the request
             });

@@ -34,7 +34,7 @@ const Dashboard = () => {
 
     const getExpense = async () => {
         try {
-            const response = await axios.get(`${backendUrl}/api/expenses`, {
+            const response = await axios.get(`https://expense-mania-backend.onrender.com/api/expenses`, {
                 headers: { Authorization: `Bearer ${token}` } // Authorization header
             });
             console.log("Response of expenses ", response.data.expenses);

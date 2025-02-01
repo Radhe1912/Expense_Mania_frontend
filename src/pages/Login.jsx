@@ -18,7 +18,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            const response = await axios.post(`${backendUrl}/api/route/login`, { email, password }, { withCredentials: true });
+            const response = await axios.post(`https://expense-mania-backend.onrender.com/api/route/login`, { email, password }, { withCredentials: true });
 
             // Store user data in localStorage
             localStorage.setItem('token', response.data.token);
