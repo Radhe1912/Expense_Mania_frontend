@@ -30,6 +30,7 @@ const Register = () => {
         e.preventDefault();
         setError('');
         try {
+            console.log("Hello");
             const response = await axios.post(`https://expense-mania-backend.onrender.com/api/route/register`, formData, {
                 withCredentials: true
             });
