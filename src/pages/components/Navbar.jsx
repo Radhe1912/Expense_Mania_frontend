@@ -63,7 +63,7 @@ const Navbar = () => {
                         {!isLoggedIn ? (
                             <>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/api/route/register">Register</a>
+                                    <a className="nav-link" href="/register">Register</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/login">Login</a>
