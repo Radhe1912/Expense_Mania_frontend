@@ -22,7 +22,7 @@ const Home = () => {
                             Managing your finances has never been easier! Our Expense Tracker helps you stay on top of your spending and
                             save more for the future. Start tracking today and take control of your money.
                         </p>
-                        {isSignedIn?(<></>):(<a href='/register' className="btn btn-light btn-lg">Get Started</a>)}
+                        {isSignedIn ? (<></>) : (<a href='/register' className="btn btn-light btn-lg">Get Started</a>)}
                     </div>
                 </section>
 
@@ -137,10 +137,71 @@ const Home = () => {
                             things that matter most to you. You can manage your budget, track your spending, and make smarter financial
                             decisions every day.
                         </p>
-                        {isSignedIn==true?(<></>):(<a href='/register' className="btn btn-light btn-lg">Sig Up Now</a>)}
+                        {isSignedIn == true ? (<></>) : (<a href='/register' className="btn btn-light btn-lg">Sig Up Now</a>)}
                     </div>
                 </section>
             </div>
+            {/* Footer Section */}
+            <footer className="bg-dark text-white py-5">
+                <div className="container">
+                    <div className="row">
+                        {/* About Section */}
+                        <div className="col-md-4 mb-4">
+                            <h5 className="mb-3">About ExpenseMania</h5>
+                            <p className="text-muted">
+                                ExpenseMania is your personal expense tracker designed to help you manage your finances, track your spending, and achieve your financial goals.
+                            </p>
+                        </div>
+
+                        {/* Quick Links Section */}
+                        <div className="col-md-2 mb-4">
+                            <h5 className="mb-3">Quick Links</h5>
+                            <ul className="list-unstyled">
+                                <li><a href="/" className="text-white text-decoration-none">Home</a></li>
+                                <li><a href="/login" className="text-white text-decoration-none">Login</a></li>
+                                <li><a href="/register" className="text-white text-decoration-none">Register</a></li>
+                                <li><a href="/dashboard" className="text-white text-decoration-none">Dashboard</a></li>
+                            </ul>
+                        </div>
+
+                        {/* Contact Section */}
+                        <div className="col-md-3 mb-4">
+                            <h5 className="mb-3">Contact Us</h5>
+                            <ul className="list-unstyled">
+                                <li className="text-muted">Email: support@expensemania.com</li>
+                                <li className="text-muted">Phone: +1 (123) 456-7890</li>
+                                <li className="text-muted">Address: 123 Finance St, Money City</li>
+                            </ul>
+                        </div>
+
+                        {/* Social Media Section */}
+                        <div className="col-md-3 mb-4">
+                            <h5 className="mb-3">Follow Us</h5>
+                            <div className="d-flex gap-3">
+                                <a href="https://facebook.com" className="text-white text-decoration-none">
+                                    <i className="fab fa-facebook fa-2x"></i>
+                                </a>
+                                <a href="https://twitter.com" className="text-white text-decoration-none">
+                                    <i className="fab fa-twitter fa-2x"></i>
+                                </a>
+                                <a href="https://instagram.com" className="text-white text-decoration-none">
+                                    <i className="fab fa-instagram fa-2x"></i>
+                                </a>
+                                <a href="https://linkedin.com" className="text-white text-decoration-none">
+                                    <i className="fab fa-linkedin fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Copyright Section */}
+                    <div className="text-center mt-4 pt-3 border-top border-secondary">
+                        <p className="text-muted mb-0">
+                            &copy; {new Date().getFullYear()} ExpenseMania. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
         </div>
     );
 };
