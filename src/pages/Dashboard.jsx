@@ -73,7 +73,7 @@ const Dashboard = () => {
     const handleUpdateExpense = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.put(`${backendUrl}/api/expenses/update`, {
+            const response = await axios.put(`https://expense-mania-tracker.vercel.app/api/expenses/update`, {
                 expenseId: editExpense._id,
                 amount: editExpense.amount,
                 category: editExpense.category,
@@ -91,7 +91,7 @@ const Dashboard = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`${backendUrl}/api/expenses/delete/${id}`, {
+            await axios.delete(`https://expense-mania-tracker.vercel.app/api/expenses/delete/${id}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setMessage('Expense deleted');
