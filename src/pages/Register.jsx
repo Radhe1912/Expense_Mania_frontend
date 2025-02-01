@@ -30,7 +30,7 @@ const Register = () => {
         e.preventDefault();
         setError('');
         try {
-            const response = await axios.post(`${backendUrl}/api/route/register`, formData, {
+            const response = await axios.post(`${backendUrl}/register`, formData, {
                 withCredentials: true
             });
             localStorage.setItem('token', response.data.token);
