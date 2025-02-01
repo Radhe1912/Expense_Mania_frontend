@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from './components/Navbar'
 import '../style/Register.css'
 
 const Register = () => {
+
+    useEffect(() => {
+        console.log("Register page loaded");
+      }, []);
 
     const [formData, setFormData] = useState({
         firstname: '',
