@@ -142,7 +142,7 @@ const Home = () => {
                 </section>
             </div>
             {/* Footer Section */}
-            <footer className="bg-dark text-white py-5">
+            <footer className="bg-dark text-white py-5 mt-3">
                 <div className="container">
                     <div className="row">
                         {/* About Section */}
