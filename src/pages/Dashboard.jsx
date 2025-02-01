@@ -102,7 +102,7 @@ const Dashboard = () => {
     };
 
     // Calculate category-wise spending
-    const categoryTotals = expenses.reduce((acc, expense) => {
+    const categoryTotals = (expenses || []).reduce((acc, expense) => {
         if (!acc[expense.category]) {
             acc[expense.category] = 0;
         }
