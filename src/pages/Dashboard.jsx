@@ -47,7 +47,7 @@ const Dashboard = () => {
     const handleAddExpense = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`${backendUrl}/api/expenses/add`, newExpense, {
+            const response = await axios.post(`https://expense-mania-backend.onrender.com/api/expenses/add`, newExpense, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setMessage(response.data.msg);
